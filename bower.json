@@ -26,6 +26,9 @@
     "font-roboto": "Polymer/font-roboto#~0.3.3",
     "core-header-panel": "Polymer/core-header-panel#~0.3.3",
     "core-toolbar": "Polymer/core-toolbar#~0.3.3",
-    "paper-tabs": "Polymer/paper-tabs#~0.3.3"
+    "paper-tabs": "Polymer/paper-tabs#~0.3.3",
+    "core-drawer-panel": "Polymer/core-drawer-panel#~0.3.3",
+    "core-menu": "Polymer/core-menu#~0.3.3",
+    "paper-item": "Polymer/paper-item#~0.3.3"
   }
 }
