@@ -1,6 +1,8 @@
-/* Gulpfile for NG-CON Israel Website */
+'use strict';
+
+/* Gulpfile for GDG Israel Website */
 /* Provides SASS + Livereload functions */
-/* Copyright (C) 2014, Uri Shaked. License: ISC */
+/* Copyright (C) 2014, 2015 Uri Shaked. License: ISC */
 
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),
@@ -37,7 +39,7 @@ gulp.task('sass', function () {
 	gulp.src(paths.styles)
 		.pipe(sass())
 		.pipe(prefix())
-		.pipe(gulp.dest('styles'))
+		.pipe(gulp.dest('styles'));
 });
 
 gulp.task('imagemin', function () {
