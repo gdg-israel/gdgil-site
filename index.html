@@ -2,9 +2,39 @@
 <html>
 	<head>
 		<title>GDG Israel</title>
+		<style type="text/css">
+			body, html {
+				height: 100%;
+			}
+
+			header {
+				position: absolute;
+				top: 0;
+			}
+
+			#main-content {
+				position: absolute;
+				top: 100px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+
+			#main-content iframe {
+				height: 100%;
+				width: 100%;
+				border: none;
+			}
+		</style>
 	</head>
 
 	<body>
-		<h1>gdg.co.il</h1>
+		<header>
+			<h1>GDG Israel - Latest Videos</h1>
+		</header>
+		<section id="main-content">
+			<iframe src="http://stream.wixplus.com/widget?instance=EozAPQzoJKLeqT0Ibd3Vl9gSvXVBD3lyAGWeGS8X4hU.eyJpbnN0YW5jZUlkIjoiMTNjMjc4YTQtMThhYy0zYjczLTMzMGQtN2MyNDUyYzAyNjEzIn0&compId=i63lg9o7&deviceType=desktop&locale=en&viewMode=site&cacheKiller=1418169015659&width=961">
+			</iframe>
+		</section>
 	</body>
 </html>
