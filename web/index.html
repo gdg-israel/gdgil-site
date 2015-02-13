@@ -1,100 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>GDG Israel</title>
-		<meta name="viewport"
-		      content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<style type="text/css">
+			body, html {
+				height: 100%;
+			}
 
-		<script src="bower_components/platform/platform.js"></script>
+			header {
+				position: absolute;
+				top: 0;
+			}
 
-		<link rel="import" href="bower_components/font-roboto/roboto.html">
-		<link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
-		<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
-		<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
-		<link rel="import" href="bower_components/core-icons/core-icons.html">
-		<link rel="import" href="bower_components/core-menu/core-menu.html">
+			#main-content {
+				position: absolute;
+				top: 100px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
 
-		<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-		<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-		<link rel="import" href="bower_components/paper-item/paper-item.html">
+			#main-content iframe {
+				height: 100%;
+				width: 100%;
+				border: none;
+			}
+		</style>
 	</head>
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-			background-color: #E5E5E5;
-			font-family: 'RobotoDraft', sans-serif;
-		}
 
-		core-header-panel {
-			height: 100%;
-			overflow: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		core-toolbar {
-			background: #03a9f4;
-			color: white;
-		}
-
-		paper-tabs {
-			width: 100%;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-
-		.container {
-			width: 80%;
-			margin: 50px auto;
-		}
-
-
-		[drawer] {
-			background-color: #fff;
-			box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
-		}
-
-		@media (min-width: 481px) {
-			paper-tabs {
-				width: 200px;
-			}
-
-			.container {
-				width: 400px;
-			}
-		}
-	</style>
-	<body unresolved touch-action="auto">
-		<core-drawer-panel>
-			<div vertical layout drawer>
-				<core-header-panel main mode="standard">
-					<core-toolbar>
-						<span flex>Menu</span>
-					</core-toolbar>
-					<core-menu theme="core-light-theme">
-						<paper-item>About</paper-item>
-						<paper-item>Chapters</paper-item>
-						<paper-item>Events</paper-item>
-					</core-menu>
-				</core-header-panel>
-			</div>
-
-			<core-header-panel main mode="standard">
-
-				<core-toolbar>
-
-					<paper-icon-button id="navicon"
-					                   icon="menu"
-					                   onclick="document.querySelector('body>core-drawer-panel').togglePanel()"></paper-icon-button>
-
-					<span flex>Welcome!</span>
-				</core-toolbar>
-
-				<h1>Google Developer Groups Israel</h1>
-
-			</core-header-panel>
-		</core-drawer-panel>
+	<body>
+		<header>
+			<h1>GDG Israel - Latest Videos</h1>
+		</header>
+		<section id="main-content">
+			<iframe src="http://stream.wixplus.com/widget?instance=EozAPQzoJKLeqT0Ibd3Vl9gSvXVBD3lyAGWeGS8X4hU.eyJpbnN0YW5jZUlkIjoiMTNjMjc4YTQtMThhYy0zYjczLTMzMGQtN2MyNDUyYzAyNjEzIn0&compId=i63lg9o7&deviceType=desktop&locale=en&viewMode=site&cacheKiller=1418169015659&width=961">
+			</iframe>
+		</section>
 	</body>
 </html>
